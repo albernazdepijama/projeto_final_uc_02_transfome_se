@@ -57,13 +57,20 @@ while True:
 
     elif opcao == 4:
      print("[4] Finalizando Compra!")
-
-    elif opcao ==5:
-     print("[5] Saindo do Sistema, Tchauzinho :3")
+     metodo_de_pagamento = []
+      if carrinho > 0:
+          print("Selecione o pagamento")
+          print("1- Debito")
+          print("2- Credito")
+          print("3-Pix")
+        metodo_de_pagamento = int(input("Digite a opcao desejada:"))
+     elif opcao ==5:
+      print("[5] Saindo do Sistema, Tchauzinho :3")
      break
+else:
+print("Opcao Invalida")
 
-    else:
-        print("Opcao Invalida")
+
 
 
 
